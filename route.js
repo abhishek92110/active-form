@@ -9,6 +9,8 @@
 // app.post('/api/proxy', async (req, res) => {
 //     const { email, firstName } = req.body;
 
+
+
 //     try {
 //         const response = await fetch('https://at604281.activehosted.com/api/3/contacts', {
 //             method: 'POST',
@@ -48,7 +50,11 @@ const port = 3000;
 app.use(bodyParser.json());
 
 app.post('/api/proxy', async (req, res) => {
-    const { email, firstName } = req.body;
+
+    console.log("proxy api is calling")
+
+    const { email, firstName, address, course } = req.body;
+    console.log("address =",address,course)
 
     try {
         const response = await fetch('https://at604281.activehosted.com/api/3/contacts', {
@@ -60,7 +66,9 @@ app.post('/api/proxy', async (req, res) => {
             body: JSON.stringify({
                 contact: {
                     email: email,
-                    firstName: firstName
+                    firstName: firstName,
+                    address:address,
+                    course:course
                 }
             })
         });
