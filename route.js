@@ -50,7 +50,7 @@ const port = 3000;
 app.use(bodyParser.json());
 
 app.get('/', async (req, res) => {
- console.log("home is calling")
+ res.send({"status":"running"})
 });
 
 app.post('/api/proxy', async (req, res) => {
