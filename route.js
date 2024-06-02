@@ -54,8 +54,13 @@ app.post('/api/proxy', async (req, res) => {
     console.log("proxy api is calling")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     const { email, firstName, address } = req.body;
     console.log("address =",address)
+=======
+    const { email, firstName, address, course } = req.body;
+    console.log("address =",address,course)
+>>>>>>> 998055206acdd00975db0a4258c0337f8f63a247
 =======
     const { email, firstName, address, course } = req.body;
     console.log("address =",address,course)
@@ -71,15 +76,21 @@ app.post('/api/proxy', async (req, res) => {
             body: JSON.stringify({
                 contact: {
 <<<<<<< HEAD
+<<<<<<< HEAD
                     email:email,
                     firstName:firstName,
                     address:address,
                     phone:"12345678"
 =======
+=======
+>>>>>>> 998055206acdd00975db0a4258c0337f8f63a247
                     email: email,
                     firstName: firstName,
                     address:address,
                     course:course
+<<<<<<< HEAD
+>>>>>>> 998055206acdd00975db0a4258c0337f8f63a247
+=======
 >>>>>>> 998055206acdd00975db0a4258c0337f8f63a247
                 }
             })

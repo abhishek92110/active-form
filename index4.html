@@ -1,13 +1,8 @@
 <!DOCTYPE html>
-<<<<<<< HEAD
-=======
-
->>>>>>> 998055206acdd00975db0a4258c0337f8f63a247
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<<<<<<< HEAD
     <title>Document</title>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -28,10 +23,6 @@
         <div class="form-group">
           <label for="exampleInputPassword1">Password</label>
           <input type="password" class="form-control" id="password" placeholder="Password">
-        </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Address</label>
-          <input type="password" class="form-control" id="address" placeholder="Password">
         </div>
       
         <button type="submit" class="btn btn-primary" onclick="sendData(event)">Submit</button>
@@ -115,16 +106,13 @@ function sendData(event) {
 
     let email = document.getElementById('email').value;
     let firstName = document.getElementById('password').value;
-    let address = document.getElementById('address').value;
 
-    console.log("address =",address)
-
-    fetch('https://active-form.onrender.com/api/proxy', {
+    fetch('http://localhost:3000/api/proxy', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ email, firstName, address })
+        body: JSON.stringify({ email, firstName })
     })
     .then(response => response.json())
     .then(data => {
@@ -146,109 +134,3 @@ function sendData(event) {
 
 </body>
 </html>
-=======
-    <title>shopping website</title>
-    <link rel="stylesheet" href="style.css">
-
-    <style>
-
-    
-
-    </style>
-    
-</head>
-<body>
-
-   <!-- html comment heading tag-->
-
-   <!-- <h1>this is the first page</h1>
-   <h2>this is the first page</h2>
-   <h3>this is the first page</h3>
-   <h4>this is the first page</h4>
-   <h5>this is the first page</h5>
-   <h6>this is the first page</h6>
-
-   <p class="myP"> this is the <strong>paragraph</strong> for the understanding you have to go to the <a href="https://www.flipkart.com/mobile-phones-store">uncodemy</a> for this
-   <br> okay you got it.</p>
-   <p id="diffP"> this is the <strong>paragraph</strong> for the understanding you have to go to the <a href="https://www.flipkart.com/mobile-phones-store">uncodemy</a> for this
-   <br> okay you got it.</p>
-
-
-   <h1>This is the image </h1> -->
-
-   <!-- <img src="./image/img/DS1.png" height="200px" width="200px">
-   <small>this is the logo image </small>
-
-   <p>so like Dr. APJ Abdul kalam said -  <q><small>if you want to shine like a sun first you have to burn like it.</small></q></p>
-   <p>log<sub>e</sub></p>
-
-   <p class="myP">2<sup>5</sup> = 32</p>
-   <p>based on the report of <abbr title="World Health Organization">WHO</abbr> the coroa virus is spreading in the west more than in the east side of the earth. so <abbr title="World Health Organization">WHO</abbr> is suggesting people to be get vaccinated as soon as possible</p>
-
-   <p >India got independence in <del>16th august</del> <mark>15<sup>th</sup> August 1947.</mark> </p>
-   <p>puma shoes now available on <del>2000</del> 1000 </p>
-
-   <address>
-    <pre>
-    Name : Vetri
-    City : Trichi
-    State : Tamil Nadu
-    Country : India
-</pre>
-</address> -->
-
-    <!-- <p style="color:red; background-color:black;">hello my name is stephan hawking. hello my name is stephan hawking.</p> -->
-
-    <!-- 1. inline css
-    2. internal css
-    3. external css -->
-
-   <!-- <table style="width:100%;">
-
-<tr>
-  <th>Name</th>
-  <th style="width:50%; text-align: right;">Class</th>
-  <th>roll no</th>
-  <th>city</th>
-</tr>
-<tr>
-  <td>Vinay</td>
-  <td>8th</td>
-  <td>123</td>
-  <td>delhi</td>
-</tr>
-
-
-   </table> -->
-
-
-   <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam quos, velit repellendus, voluptatum asperiores odio sapiente, ducimus deleniti quasi facilis ipsa adipisci ab?</p>
-
-   <h1>List Animal </h1> -->
-
-   <!-- ul - unordered list -->
-
-  <!-- <ul type="square">
-
-    <li>Lion</li>
-    <li>Tiger</li>
-    <li>Dog</li>
-
-  </ul>
-  <ol>
-    <li>Coffee</li>
-    <li>Tea</li>
-    <li>Milk</li>
-  </ol> -->
-   
-
-  <div class="header">
-    <span class="nav-1">one </span>
-    <span class="nav2">two</span>
-  </div>
- 
-   
-    
-</body>
-</html>
->>>>>>> 998055206acdd00975db0a4258c0337f8f63a247

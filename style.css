@@ -1,5 +1,8 @@
+<<<<<<< HEAD
 
 
+=======
+>>>>>>> 998055206acdd00975db0a4258c0337f8f63a247
 p{
     background-color: orange;
     color: white;
@@ -9,7 +12,11 @@ p{
     margin: 300px;
 }
 
+<<<<<<< HEAD
 .Pmy{
+=======
+.myP{
+>>>>>>> 998055206acdd00975db0a4258c0337f8f63a247
     background-color: orange;
     color: white;
 }
@@ -22,7 +29,11 @@ p{
 table, td, th{
 
     border:1px solid black;
+<<<<<<< HEAD
     border-collapse: collapse;    
+=======
+    border-collapse: collapse;  
+>>>>>>> 998055206acdd00975db0a4258c0337f8f63a247
 
 }
 
