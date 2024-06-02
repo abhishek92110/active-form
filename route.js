@@ -51,7 +51,7 @@ app.use(bodyParser.json());
 
 app.get('/', async (req, res) => {
  console.log("home is calling")
-}
+});
 
 app.post('/api/proxy', async (req, res) => {
 
