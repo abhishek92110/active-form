@@ -1,0 +1,15 @@
+{
+  "type": "module",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+<<<<<<< HEAD
+    "node-fetch": "^3.0.0"
+=======
+    "node-fetch": "^3.0.0",
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5"
+>>>>>>> 998055206acdd00975db0a4258c0337f8f63a247
+  }
+}

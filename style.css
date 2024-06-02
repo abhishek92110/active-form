@@ -1,0 +1,41 @@
+
+
+p{
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border: 5px solid black;
+    padding: 50px;
+    margin: 300px;
+}
+
+.Pmy{
+    background-color: orange;
+    color: white;
+}
+
+#diffP{
+    background-color: yellow;
+    color: red;
+}
+
+table, td, th{
+
+    border:1px solid black;
+    border-collapse: collapse;    
+
+}
+
+td{
+    font-size: 20px;
+    text-align: right;
+}
+
+
+/* ul li{
+    list-style-type: square;
+
+} */
+
+
+
